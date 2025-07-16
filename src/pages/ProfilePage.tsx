@@ -3,9 +3,7 @@ import "./ProfilePages.css";
 import DeletePostButton from "../components/DeletePostButton";
 import UpdatePostButton from "../components/UpdatePostButton";
 import AddPostButton from "../components/AddPostButton";
- 
 import { useLocation } from "wouter";
-
 
 type ProfilePageProps = {
   userPosts: any[];
@@ -19,12 +17,15 @@ const ProfilePage = ({ userPosts, profilePic, bannerPic, onDeletePost, onUpdateP
   const [activeTab, setActiveTab] = useState("posts");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [, navigate] = useLocation();
+  
+  const bannerStyle = { backgroundImage: `url(${bannerPic})` };
+  
   return (
     <div className="standard">
       <div className="page-content profile-page">
         <div
           className="profile-banner"
-          style={{ backgroundImage: `url(${bannerPic})` }}
+          style={bannerStyle}
         />
 
         <div className="profile-header">
@@ -136,7 +137,7 @@ const ProfilePage = ({ userPosts, profilePic, bannerPic, onDeletePost, onUpdateP
         <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <img
-              src="src/assets/my_profilepic.jpg"
+              src={profilePic}
               alt="Expanded Profile"
               className="modal-image"
             />
