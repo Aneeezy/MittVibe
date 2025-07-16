@@ -1,4 +1,4 @@
-import { Route, Switch, Link, useLocation } from "wouter";
+import { Route, Switch, Link, useLocation, Router } from "wouter";
 import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import ActivityPage from "./pages/ActivityPage.tsx";
@@ -40,9 +40,10 @@ function App() {
   const [bio, setBio] = useState("Looking for cool events to go to :)");
 
   return (
-    <div className="app">
-      <div className="main-content">
-        <Switch>
+    <Router base="/MittVibe">
+      <div className="app">
+        <div className="main-content">
+          <Switch>
           <Route
             path="/"
             component={() => <HomePage userPosts={userPosts} />}
@@ -168,6 +169,7 @@ function App() {
         </Link>
       </nav>
     </div>
+    </Router>
   );
 }
 
