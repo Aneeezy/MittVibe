@@ -24,7 +24,7 @@ function ActivityPage() {
         
         <div className="notification-card">
           <img
-            src="src/assets/ActivityPictures/sunset_event.jpg"
+            src="/MittVibe/assets/ActivityPictures/sunset_event.jpg"
             alt="Sunset Yoga"
             className="thumbnail"
           />
@@ -48,7 +48,7 @@ function ActivityPage() {
 
         <div className="notification-card">
           <img
-            src="src/assets/ActivityPictures/jazz_night.jpg"
+            src="/MittVibe/assets/ActivityPictures/jazz_night.jpg"
             alt="Jazz Night"
             className="thumbnail"
           />
@@ -60,7 +60,7 @@ function ActivityPage() {
 
         <div className="notification-card">
           <img
-            src="src/assets/ActivityPictures/romance_bookfair.jpg"
+            src="/MittVibe/assets/ActivityPictures/romance_bookfair.jpg"
             alt="Book Fair"
             className="thumbnail"
           />
@@ -73,7 +73,7 @@ function ActivityPage() {
         <div className="notification-card">
           <img
             src="src/open air cinema.jpg"
-            alt="src/assets/ActivityPictures/open_aircinema.jpga"
+            alt="/MittVibe/assets/ActivityPictures/open_aircinema.jpg"
             className="thumbnail"
           />
           <div className="notification-text">

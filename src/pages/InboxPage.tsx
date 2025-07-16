@@ -92,7 +92,7 @@ function InboxPage() {
             className={`message-preview ${chat.unread ? "unread" : ""}`}
           >
             <img
-              src="src/assets/profile_pic.jpg"
+              src="/MittVibe/assets/profile_pic.jpg"
               alt={`${chat.user}'s profile`}
               className="chat-pfp"
             />

@@ -32,9 +32,9 @@ function App() {
     );
   };
 
-  const [profilePic, setProfilePic] = useState("src/assets/my_profilepic.jpg");
+  const [profilePic, setProfilePic] = useState("/MittVibe/assets/my_profilepic.jpg");
   const [bannerPic, setBannerPic] = useState(
-    "src/assets/background_banner.jpg"
+    "/MittVibe/assets/background_banner.jpg"
   );
   const [username, setUsername] = useState("Anissa");
   const [bio, setBio] = useState("Looking for cool events to go to :)");
@@ -160,7 +160,7 @@ function App() {
           <button className={isActive("/profile")} title="Profile">
             <div className="icon-icon">
               <img
-                src="src/assets/profile_icon.jpg"
+                src="/MittVibe/assets/profile_icon.jpg"
                 alt="Profile"
                 className="profile-picture"
               />

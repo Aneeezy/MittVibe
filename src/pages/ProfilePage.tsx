@@ -114,12 +114,12 @@ const ProfilePage = ({ userPosts, profilePic, bannerPic, onDeletePost, onUpdateP
           ) : (
             <div className="grid">
               {[
-                "src/assets/ActivityPictures/street_food.jpg",
-                "src/assets/ActivityPictures/romance_bookfair.jpg",
-                "src/assets/ActivityPictures/jazz_night.jpg",
-                "src/assets/ActivityPictures/open_aircinema.jpg",
-                "src/assets/ActivityPictures/nivea_event.jpg",
-                "src/assets/ActivityPictures/pink_event.jpg",
+                "/MittVibe/assets/ActivityPictures/street_food.jpg",
+                "/MittVibe/assets/ActivityPictures/romance_bookfair.jpg",
+                "/MittVibe/assets/ActivityPictures/jazz_night.jpg",
+                "/MittVibe/assets/ActivityPictures/open_aircinema.jpg",
+                "/MittVibe/assets/ActivityPictures/nivea_event.jpg",
+                "/MittVibe/assets/ActivityPictures/pink_event.jpg",
               ].map((src, i) => (
                 <img
                   key={i}
