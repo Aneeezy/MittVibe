@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap');
+
+.inbox-page {
+  background-color: #236130;
+  height: 100vh;
+  padding: 16px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+ padding-left: 16px;
+  padding-right: 16px; /* Ensure some horizontal padding */
+  box-sizing: border-box; 
+  margin-bottom: 60px; /* space for bottom nav */
+}
+
+.inbox-header {
+ position: sticky;
+  top: 0px;
+  z-index: 10;
+  background: #236130;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);           
+  margin-left: 0px;        
+  box-sizing: border-box;
+}
+
+.profile-pic-wrapper { 
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-pic-wrapper:hover {
+  transform: scale(1.05); 
+   margin-top: -110px;     /* moves up */
+  margin-left: 15px; 
+  /* subtle zoom on hover */
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.inbox-title {
+   position: relative;
+  top: -40px;
+  left: 15px;
+  z-index: 10;
+  color: #ff1493;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: 'Abril Fatface', serif;
+}
+
+.search-bar-container {  
+ width: 200px; /* or whatever width you want */
+  margin-top: -50px;  /* fine tune vertical position */
+  margin-left: -10px; /* moves it right */
+  /* optionally */
+  position: relative;
+  left: 10px; 
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 50px;       /* less round corners */
+  border: none;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  background-color: #9ABC05;
+  color:#FFF9EB; 
+}
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message-preview {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.chat-pfp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+   margin-left: 20px
+}
+
+.chat-info {
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.chat-user {
+  font-weight: normal;
+}
+
+.unread .chat-user {
+  font-weight: bold;
+}
+
+.chat-time {
+  color: #d3d3d3;
+  font-size: 12px;
+  margin-left: 40px;
+}
+
+.chat-message {
+  font-size: 13px;
+  color: #f0f0f0;
+  position: relative;
+}
+
+.unread-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #71C5D5;
+  border-radius: 50%;
+  margin-left: 8px;
+  vertical-align: middle;
+}

@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap');
+
+.upload-page {
+  background-color: #236130;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 100px;
+  font-family: 'Lato', sans-serif;
+  color: #FFF9EB;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 600px; 
+  margin: 0 auto;    
+}
+
+.upload-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Abril Fatface', serif;
+  color: #ff1493;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.upload-input,
+.upload-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #9ABC05;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.upload-input::placeholder,
+.upload-textarea::placeholder {
+  color: #FFF9EB;
+  opacity: 0.8;
+}
+
+.upload-input:focus,
+.upload-textarea:focus {
+  outline: 2px solid #fff;
+  background-color: #b6d433;
+}
+
+.upload-textarea {
+  height: 150px;
+  resize: none;
+}
+
+.attachment-wrapper {
+  position: relative;
+  width: 100;
+}
+
+.attachment-button {
+  padding: 12px 16px;
+  font-size: 16px;
+  background-color: #9ABC05;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.attachment-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+  background-color: #9ABC05;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.attachment-dropdown button {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.attachment-dropdown button:hover {
+  background-color: #b6d433;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #FFF9EB;
+  color: #236130;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+
+.submit-button:hover {
+  background-color: #eae0c8;
+}
+.upload-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #236130;
+  padding: 10px;
+  text-align: center;
+}
+
+.post-button {
+  position: fixed;
+  bottom: 80px;  
+  right: 20px;
+  z-index: 100;
+  background-color: #DF3890;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  box-shadow: 0 4px 8px rgba(223, 56, 144, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.post-button:hover {
+  background-color: #c32e79; 
+}
+.upload-footer-text {
+  color: #FFF9EB;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+.input-title,
+.location-input,
+.description-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0;
+  
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.post-btn-row {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.fixed-post-btn {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 70px; 
+  z-index: 100;
+  width: calc(100% - 40px); 
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.standard {
+  background-color: #236130;
+  min-height: 100vh;
+  color: white;
+  font-family: Lato, Helvetica;
+}
+
+.profile-page {
+  padding: 1.5rem 1rem;
+}
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  cursor: pointer;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name {
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.8rem;
+  color: #DF3890;
+  margin: 0;
+}
+
+.profile-bio {
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  color: white;
+}
+
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0 1rem;
+  text-align: center;
+}
+
+.profile-stats strong {
+  font-size: 1.2rem;
+}
+
+.profile-stats p {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+}
+
+
+.edit-profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.edit-profile-button {
+  background-color: #DF3890;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.25rem;
+}
+
+.tab {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+
+.underline-container {
+  height: 2px;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 1.2rem;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 50%;
+  background-color: skyblue;
+  transition: transform 0.3s ease;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.grid-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 90vh;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.close-button {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: #DF3890;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.profile-banner {
+  background-image: url("src/assets/background_banner.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: 150px; 
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scrollable-content {
+  overflow-y: auto;
+  height: 100%;
+  flex: 1;
+  padding-bottom: 80px; 
+}
+
+.page-content.profile-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.file-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-wrapper {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #dfdfdf;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

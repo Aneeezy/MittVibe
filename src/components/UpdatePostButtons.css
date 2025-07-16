@@ -1,0 +1,22 @@
+.plain-white-button {
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  /* Initial position */
+  transform: translateY(0);
+}
+
+.plain-white-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-3px); /* Move up by 3px */
+}
+
+.plain-white-button:active {
+  background: #e0e0e0;
+  transform: translateY(-1px); /* Slightly less on click */
+}
